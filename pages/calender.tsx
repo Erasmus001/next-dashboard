@@ -2,7 +2,7 @@ import React from 'react';
 
 const Calender = () => {
   return (
-    <section className='w-full h-full bg-orange-300'>Calender Page</section>
+    <section className='w-full h-full bg-blue-500'>Calender Page</section>
   );
 };
 

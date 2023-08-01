@@ -11,9 +11,9 @@ const DashboardLayout: NextPage<DashboardLayoutProp> = ({ children }) => {
   return (
     <div className='h-screen w-screen flex items-start justify-start'>
       <Sidebar />
-      <section className='w-full flex-1 h-screen bg-yellow-300 flex flex-col items-start justify-start'>
+      <section className='w-full h-screen flex flex-col items-start justify-start'>
         <Header />
-        <div className='w-full h-[calc(100%-64px)] overflow-y-auto bg-red-300'>
+        <div className='h-full w-full'>
           {children}
         </div>
       </section>
