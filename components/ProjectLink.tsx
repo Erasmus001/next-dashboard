@@ -1,4 +1,4 @@
-import { ProjectType } from '@/data';
+import { ProjectType } from '@/types';
 import Link from 'next/link';
 import React from 'react';
 
