@@ -7,12 +7,13 @@ type CommentProp = {
 const Comment = ({ comment }: CommentProp) => {
   return (
     <div className='w-full flex items-center justify-start gap-4'>
+      {/* User Avatar */}
       <div className='flex items-center justify-start gap-4'>
         <div className='w-8 rounded-full bg-gray-200 h-8'></div>
       </div>
       <div>
-        <small className='text-[11px]'>{comment.date}</small>
-        <h4 className='text-[12px]'>{comment.comment}</h4>
+        <small className='text-[12px]'>{comment?.date}</small>
+        <h4 className='text-[14px]'>{comment?.comment}</h4>
       </div>
     </div>
   );

@@ -27,9 +27,9 @@ const TaskDetail = () => {
   ];
 
   return (
-    <section className='h-full w-full flex items-start justify-start'>
+    <section className='h-[calc(100vh-64px)] w-full flex items-start justify-start shrink-0'>
       {/* Left Side */}
-      <div className='w-3/4 h-[calc(100%-64px)] flex items-start justify-start flex-col'>
+      <div className='w-3/4 h-full flex items-start justify-start flex-col'>
         <header className='h-16 border-b border-gray-300 w-full flex items-center justify-start px-8 gap-4'>
           <button
             className='text-black text-sm py-1.5 px-4 hover:bg-gray-50 rounded-md'
@@ -46,13 +46,13 @@ const TaskDetail = () => {
         </header>
 
         {/* Details */}
-        <div className='w-full h-[calc(100%-64px)] py-8 px-20 overflow-y-auto flex items-start justify-start flex-col gap-4'>
+        <div className='w-full h-full pt-8 pb-5 px-20 overflow-y-auto flex items-start justify-start flex-col gap-4'>
           {/* Title */}
-          <div className='w-full rounded-sm py-3 px-2 bg-white'>
-            <h2>Task Details</h2>
+          <div className='w-full rounded-sm py-3 px-3 bg-gray-100'>
+            <h2>Task title</h2>
           </div>
-          <div className='w-full rounded-sm bg-white py-4 px-2 min-h-52 h-56 xl:h-56  border-gray border-2'>
-            <h2>Task Description....</h2>
+          <div className='w-full rounded-sm bg-gray-100 py-4 px-3 min-h-auto h-56 xl:h-56 border-gray'>
+            <h2>Task description....</h2>
           </div>
 
           {/* Comments */}
@@ -71,8 +71,8 @@ const TaskDetail = () => {
             <form className='w-full flex items-start justify-start flex-col overflow-hidden'>
               <textarea
                 name='comment'
-                id=''
-                className='w-full border-0 p-4 resize-none rounded-md focus:ring-0 text-sm'
+                id='comment'
+                className='w-full border-0 p-4 resize-none rounded-md focus:ring-none text-sm'
                 rows={5}
                 placeholder='Leave a comment...'
               ></textarea>
@@ -88,10 +88,7 @@ const TaskDetail = () => {
 
       {/* Task Details + Title+ Desc + Comments + Comment Box + Sidebar */}
       <div className='flex flex-1 bg-white h-full flex-col gap-2 border-l'>
-        {/* <h1>He</h1> */}
-        {/* <header className='h-16 border-b border-gray-300 w-full flex items-center justify-start px-8'></header> */}
-
-        <div className='w-full p-5 flex items-start justify-start flex-col gap-5'>
+        <div className='w-full p-5 mt-16 flex items-start justify-start flex-col gap-5'>
           <div className='w-full flex items-center justify-start'>
             <div className='w-28 text-sm'>Status</div>
             <div className='w-28 text-sm'>Todo</div>

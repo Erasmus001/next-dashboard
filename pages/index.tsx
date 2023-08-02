@@ -2,8 +2,6 @@ import GreetingText from '@/components/GreetingText';
 import HeaderStat from '@/components/HeaderStat';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
-import { ReactElement } from 'react';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
