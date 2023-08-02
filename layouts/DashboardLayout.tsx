@@ -19,6 +19,6 @@ const DashboardLayout: NextPage<DashboardLayoutProp> = ({ children }) => {
       </section>
     </div>
   );
-};
+}
 
 export default DashboardLayout;

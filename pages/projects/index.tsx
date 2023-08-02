@@ -1,9 +1,8 @@
+import { useState } from 'react';
 import Modal from '@/components/Modal';
 import ProjectLink from '@/components/ProjectLink';
 import { ProjectsData } from '@/data';
 import Head from 'next/head';
-import { Button } from 'primereact/button';
-import { useState } from 'react';
 
 const Projects = () => {
   const [visible, setVisible] = useState<boolean>(false);

@@ -4,7 +4,7 @@ import Comment from '@/components/Comment';
 
 const TaskDetail = () => {
   const { query } = useRouter();
-  const { projectId } = query;
+  const { taskId } = query;
 
   const router = useRouter();
 
@@ -38,9 +38,9 @@ const TaskDetail = () => {
             Back
           </button>
           <div className='text-[13px]'>
-            Viewing Task Details for task:{' '}
+            Viewing details for task:{' '}
             <span className='p-1.5 px-3 rounded-sm bg-gray-100 font-semibold'>
-              #{projectId}
+              #{taskId}
             </span>
           </div>
         </header>
@@ -66,7 +66,7 @@ const TaskDetail = () => {
               ))}
             </div>
           </div>
-
+          {/* Comment Text Area */}
           <div className='w-full border rounded-md shadow-md'>
             <form className='w-full flex items-start justify-start flex-col overflow-hidden'>
               <textarea
