@@ -11,19 +11,19 @@ const Sidebar = () => {
 
 			{/* Navigations */}
 			<div className='w-full flex items-start justify-start flex-col gap-2 flex-1'>
-				<div className='w-full flex items-start justify-start flex-col flex-1'>
+				<div className='w-full flex items-start justify-start flex-col'>
 					<Link href={'/'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Overview</Link>
-					<Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Messages</Link>
+					{/* <Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Messages</Link> */}
 					<Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Notifications</Link>
 					<Link href={'/projects'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Projects</Link>
 					<Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Teams</Link>
 				</div>
-				{/* <div className='w-full flex items-start justify-start flex-col'>
+				<div className='w-full flex items-start justify-start flex-col'>
 					<Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Meetings</Link>
 					<Link href={'/messages'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Documents</Link>
-					<Link href={'/'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Projects</Link>
-					<Link href={'/'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>My Tasks</Link>
-				</div> */}
+					<Link href={'/'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Employees</Link>
+					<Link href={'/'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Clients</Link>
+				</div>
 			</div>
 
 			<div className="w-full flex items-start justify-start flex-col">

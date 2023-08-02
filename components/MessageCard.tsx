@@ -19,7 +19,7 @@ type MessageCardProp = MessageProp & {
 
 const MessageCard = ({ title, message, data }: MessageCardProp) => {
   return (
-    <Link href={`/messages/${data}`} className='w-full flex items-start justify-start bg-white p-4 hover:bg-gray-200 ease-linear cursor-pointer'>
+    <Link href={`/messages/${data}`} className='w-full flex items-start justify-start bg-white p-4 hover:bg-gray-200 ease-linear cursor-pointer border-b'>
       <h4 className='text-sm'>{title}</h4>
     </Link>
   );

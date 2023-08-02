@@ -3,17 +3,16 @@ import React, { ReactElement } from 'react';
 
 const Messages = () => {
   return (
-    <section className='w-full flex h-[calc(100vh-64px)] items-start justify-start'>
-      {/* <MessagesSidebar /> */}
-      <h3>Main Message</h3>
-    </section>
+    <div className='w-full h-full bg-blue-200 flex'>
+      <h2>Message</h2>
+    </div>
   );
 };
 
 Messages.getLayout = (page: ReactElement) => {
   return (
-    <div className='w-full flex items-start justify-start'>
-      <MessagesSidebar />
+    <div className='w-full h-full'>
+      {/* <MessagesSidebar /> */}
       {page}
     </div>
   );
@@ -21,7 +20,7 @@ Messages.getLayout = (page: ReactElement) => {
 
 export default Messages;
 
-const MessagesSidebar = () => {
+export const MessagesSidebar = () => {
   const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
   return (
