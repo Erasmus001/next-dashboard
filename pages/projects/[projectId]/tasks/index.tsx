@@ -49,7 +49,7 @@ const Tasks = () => {
   };
 
   return (
-    <section className='h-full w-full overflow-y-auto'>
+    <section className='h-full w-full'>
       <div className='h-full flex items-start justify-start flex-col gap-4'>
         {/* <ProjectPreview /> */}
         {isAdmin && (
