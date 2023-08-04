@@ -4,6 +4,7 @@ import { Editor, EditorTextChangeEvent } from 'primereact/editor';
 const TaskForm = () => {
   const [title, setTitle] = useState<string>('');
   const [description, setDescription] = useState<string>('');
+
   return (
     <form className='w-full flex flex-col gap-2 items-start justify-start bg-gray-200'>
       <div className='w-full flex flex-col items-start justify-start'>

@@ -19,9 +19,10 @@ const Sidebar = () => {
 				</div>
 				<div className='w-full flex items-start justify-start flex-col'>
 					<Link href={'/meetings'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Meetings</Link>
-					<Link href={'/documents'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Documents</Link>
+					{/* <Link href={'/documents'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Documents</Link> */}
 					<Link href={'/employees'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Employees</Link>
 					<Link href={'/clients'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Clients</Link>
+					<Link href={'/jobs'} className='w-full p-2 px-5 text-black cursor-pointer text-[14px] hover:bg-gray-50'>Jobs</Link>
 				</div>
 			</div>
 

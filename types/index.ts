@@ -45,3 +45,10 @@ export type Column = {
 	title: string;
 	items: Task[];
 };
+
+
+export type EmployeeType = {
+	id: number | string;
+	name: string;
+	imgUrl: string;
+};

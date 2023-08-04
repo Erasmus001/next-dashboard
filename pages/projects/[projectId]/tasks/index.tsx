@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Dialog } from 'primereact/dialog';
-// import CreateTaskButton from '@/components/CreateTaskButton';
-import TaskForm from '@/components/TaskForm';
-import ProjectPreview from '@/components/ProjectPreview';
+import { useEffect, useState, FC } from 'react';
 import TaskColumn from '@/components/TaskColumn';
 import { Column } from '@/types';
+import { useRouter } from 'next/router';
+import { Button } from 'primereact/button';
 
 type CreateNewIssueButtonProp = {
   setVisible?: (val: boolean) => void;
@@ -17,7 +15,6 @@ const Tasks = () => {
 
   const [columns, setColumns] = useState<Column[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [visible, setVisible] = useState<boolean>(false);
 
   const fetchColumData = async () => {
     setIsLoading(true);
@@ -70,28 +67,9 @@ const Tasks = () => {
           ))}
         </div>
       </div>
-
-      <Dialog
-        header='New Issue'
-        visible={visible}
-        style={{ width: '50vw' }}
-        onHide={() => setVisible(false)}
-        closeOnEscape
-        baseZIndex={5}
-        draggable={false}
-        dismissableMask
-        focusOnShow={false}
-      >
-        <TaskForm />
-      </Dialog>
     </section>
   );
 };
 
 export default Tasks;
-
-import { Button } from 'primereact/button';
-import { FC } from 'react';
-import { useRouter } from 'next/router';
-
 

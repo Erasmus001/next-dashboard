@@ -96,11 +96,11 @@ const NewTask = () => {
                     value={description}
                     placeholder='Add description...'
                     onTextChange={(e: EditorTextChangeEvent) =>
-                      setDescription(e.textValue)
+                      setDescription(e?.textValue)
                     }
                     style={{ height: '420px' }}
                     autoCorrect='true'
-                    enterKeyHint='enter'
+                    enterKeyHint='done'
                   // required
                   />
                 </div>

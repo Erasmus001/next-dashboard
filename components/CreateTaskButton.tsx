@@ -15,6 +15,8 @@ const CreateTaskButton: FC<CreateNewIssueButtonProp> = () => {
       size='small'
       className='bg-black text-white'
       onClick={() => router.push(`/${''}`)}
+      // color='red'
+
     />
   );
 };
