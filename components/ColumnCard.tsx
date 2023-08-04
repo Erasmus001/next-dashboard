@@ -1,16 +1,9 @@
 import { Task } from '@/types';
 import { useRouter } from 'next/router';
-// import { useSortable } from '@dnd-kit/sortable';
-// import { CSS } from '@dnd-kit/utilities';
 
-// ContextMenu
-import { ContextMenu } from 'primereact/contextmenu';
-import { MenuItem } from 'primereact/menuitem';
-import { useRef } from 'react';
 
 type ColumnCardProp = {
   task: Task;
-  // isDraggingOver?: boolean;
 };
 
 
@@ -18,27 +11,11 @@ const ColumnCard = ({ task }: ColumnCardProp) => {
   const router = useRouter();
   const { query: { projectId } } = router;
 
-  const cm = useRef(null);
-  const contextMenuItems: MenuItem = [
-    {
-      label: "View",
-      icon: "pi pi-fw pi-eye"
-    },
-    {
-      label: "Delete",
-      icon: "pi pi-fw pi-eye",
-      command(event: any) {
-        console.log(event);
-      },
-    },
-  ];
-
   return (
     <>
-      <ContextMenu model={contextMenuItems} ref={cm} />
+      {/* <ContextMenu model={contextMenuItems} ref={cm} /> */}
       <div
         onClick={() => router.push(`/projects/${projectId}/tasks/${task.taskId}`)}
-        onContextMenu={(event) => cm!.current?.show(event)}
         className={`w-full bg-white p-3 py-4.5 rounded-md shadow-md cursor-pointer gap-3 ease-in-out`}
         draggable
       >
@@ -67,10 +44,8 @@ const ColumnCard = ({ task }: ColumnCardProp) => {
             <div className='h-8 w-8 rounded-full bg-gray-200'></div>
           </div>
         </div>
-        {/* <ContextMenu model={menu} ref={cm} breakpoint='767px' /> */}
       </div>
     </>
-    // </ContextMenu>
   );
 };
 
